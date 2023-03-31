@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TalkTime</string>
+    <string name="natija">Result</string>
+    <string name="text_yoziladi">write text</string>
+    <string name="rasmni_korish">Show Image:</string>
+    <string name="rasm_qo_shish">Add Image</string>
+    <string name="sozlamalar">Sozlamalar</string>
+    <string name="jonli">Jonli</string>
+    <string name="audioni_eshitish">Listen Audio</string>
+    <string name="menu_dashboard">Home</string>
+    <string name="menu_leaderboard">Inbox</string>
+    <string name="menu_store">profile</string>
+    <string name="take_a_photo">Take a Photo</string>
+    <string name="gallery">Gallery</string>
+</resources>

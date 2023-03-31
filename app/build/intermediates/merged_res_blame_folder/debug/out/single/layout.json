@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\7.4\\mening.dasturim.myvoiceapp-mergeDebugResources-45:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\7.4\\mening.dasturim.myvoiceapp-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "mening.dasturim.myvoiceapp-mergeDebugResources-45:/layout/activity_main.xml",
+        "source": "mening.dasturim.myvoiceapp-main-48:/layout/activity_main.xml"
+    }
+]

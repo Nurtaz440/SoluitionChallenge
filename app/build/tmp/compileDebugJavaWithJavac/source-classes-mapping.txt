@@ -1,4 +1,0 @@
-mening/dasturim/myvoiceapp/databinding/ActivityMainBinding.java
- mening.dasturim.myvoiceapp.databinding.ActivityMainBinding
-mening/dasturim/myvoiceapp/BuildConfig.java
- mening.dasturim.myvoiceapp.BuildConfig

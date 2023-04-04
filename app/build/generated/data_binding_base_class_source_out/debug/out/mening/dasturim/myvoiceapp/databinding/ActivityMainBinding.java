@@ -5,8 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -38,19 +40,32 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView imageTv;
 
   @NonNull
+  public final AppCompatImageView ivGif;
+
+  @NonNull
   public final ImageView playBtn;
+
+  @NonNull
+  public final SeekBar seekBar;
+
+  @NonNull
+  public final SeekBar seekBarPitch;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull ShapeableImageView camera, @NonNull MaterialCardView cvPassword,
       @NonNull TextInputEditText evNatija, @NonNull ShapeableImageView gallery,
-      @NonNull ImageView imageTv, @NonNull ImageView playBtn) {
+      @NonNull ImageView imageTv, @NonNull AppCompatImageView ivGif, @NonNull ImageView playBtn,
+      @NonNull SeekBar seekBar, @NonNull SeekBar seekBarPitch) {
     this.rootView = rootView;
     this.camera = camera;
     this.cvPassword = cvPassword;
     this.evNatija = evNatija;
     this.gallery = gallery;
     this.imageTv = imageTv;
+    this.ivGif = ivGif;
     this.playBtn = playBtn;
+    this.seekBar = seekBar;
+    this.seekBarPitch = seekBarPitch;
   }
 
   @Override
@@ -110,14 +125,32 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.iv_gif;
+      AppCompatImageView ivGif = ViewBindings.findChildViewById(rootView, id);
+      if (ivGif == null) {
+        break missingId;
+      }
+
       id = R.id.play_btn;
       ImageView playBtn = ViewBindings.findChildViewById(rootView, id);
       if (playBtn == null) {
         break missingId;
       }
 
+      id = R.id.seek_bar;
+      SeekBar seekBar = ViewBindings.findChildViewById(rootView, id);
+      if (seekBar == null) {
+        break missingId;
+      }
+
+      id = R.id.seek_bar_pitch;
+      SeekBar seekBarPitch = ViewBindings.findChildViewById(rootView, id);
+      if (seekBarPitch == null) {
+        break missingId;
+      }
+
       return new ActivityMainBinding((ConstraintLayout) rootView, camera, cvPassword, evNatija,
-          gallery, imageTv, playBtn);
+          gallery, imageTv, ivGif, playBtn, seekBar, seekBarPitch);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

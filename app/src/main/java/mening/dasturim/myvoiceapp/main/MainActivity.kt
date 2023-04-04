@@ -13,10 +13,12 @@ import android.speech.RecognizerIntent
 import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.util.SparseArray
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.bumptech.glide.Glide
 import com.google.android.gms.vision.Frame
 import com.google.android.gms.vision.text.TextBlock
 import com.google.android.gms.vision.text.TextRecognizer
@@ -26,7 +28,8 @@ import mening.dasturim.myvoiceapp.R
 import mening.dasturim.myvoiceapp.databinding.ActivityMainBinding
 import mening.dasturim.myvoiceapp.retrofit.ApiInterface
 import okhttp3.ResponseBody
-import java.io.*
+import java.io.FileOutputStream
+import java.io.InputStream
 import java.util.*
 
 
@@ -54,8 +57,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE)
 
         tts = TextToSpeech(this, this)
-
-
+        activityMainBinding.ivGif.visibility = View.GONE
         activityMainBinding.playBtn.isEnabled = true
         activityMainBinding.playBtn.setOnClickListener {
             if (!run) {
@@ -66,9 +68,9 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 activityMainBinding.playBtn.setImageResource(R.drawable.ic_baseline_play_arrow)
                 run = false
                tts!!.stop()
+
             }
-            //    yourServiceInstance.downloadFile()
-//            speak()
+
         }
 
         activityMainBinding.camera.setOnClickListener {
@@ -90,73 +92,27 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 pickGallery()
             }
         }
-
-//        activityMainBinding.playBtn.setOnClickListener {
-//            val speachIntent=Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
-//            speachIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
-//            speachIntent.putExtra(RecognizerIntent.EXTRA_PROMPT,"textdan gapirishga")
-//            startActivityForResult(speachIntent,Constants.RECOGNIZER_RESULT)
-//        }
-
     }
 
     private fun speak() {
+
+        var pitch = activityMainBinding.seekBar.getProgress()/ 50.0
+        if (pitch<0.1) {
+            pitch = 0.1
+        }
+        var speed = activityMainBinding.seekBar.getProgress()  / 50.0
+        if (speed<0.1) {
+            speed = 0.1
+        }
+        tts!!.setPitch(pitch.toFloat())
+        tts!!.setSpeechRate(speed.toFloat())
         val text = activityMainBinding.evNatija.text.toString()
-        tts!!.speak(text, TextToSpeech.LANG_MISSING_DATA, null, "")
-        tts!!.voice.quality
+        tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null)
 
+
+        activityMainBinding.ivGif.visibility = View.VISIBLE
+        Glide.with(this).load(R.drawable.loud).into(activityMainBinding.ivGif)
     }
-
-
-//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-//        menuInflater.inflate(R.menu.menu, menu)
-//
-//        return true
-//    }
-//
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//
-//        when (item.itemId) {
-//            R.id.menu_image -> {
-//                showDialog()
-//            }
-//            R.id.menu_settings -> {
-//                Toast.makeText(this, "error keldi", Toast.LENGTH_SHORT).show()
-//            }
-//        }
-//        return super.onOptionsItemSelected(item)
-//    }
-
-//    fun showDialog() {
-//        val names = arrayOf("Camera", "Gallery")
-//
-//        val alertDialog: AlertDialog.Builder = AlertDialog.Builder(this)
-//
-//        alertDialog.setTitle("Rasmni tanlang")
-//        alertDialog.setItems(names, object : DialogInterface.OnClickListener {
-//            override fun onClick(p0: DialogInterface?, postion: Int) {
-//                if (postion == 0) {
-//                    if (!checkCameraPermission()) {
-//                        //if camera not allowed
-//                        requestCameraPermission()
-//                    } else {
-//                        pickCamera()
-//                    }
-//                }
-//                if (postion == 1) {
-//                    if (!checkStoragePermission()) {
-//                        //if camera not allowed
-//                        requestStoragePermission()
-//                    } else {
-//                        pickGallery()
-//                    }
-//
-//                }
-//            }
-//
-//        })
-//        alertDialog.create().show()
-//    }
 
     internal fun pickGallery() {
         val intent = Intent(Intent.ACTION_PICK)
@@ -251,32 +207,6 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
     }
 
-//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-//        menuInflater.inflate(R.menu.bottom_menu, menu)
-//        return true
-//    }
-//
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        when (item.itemId) {
-//            R.id.item0 -> {
-//                showToast("Another Menu Item 1 Selected")
-//            }
-//
-//            R.id.item1 -> {
-//                showToast("Another Menu Item 2 Selected")
-//            }
-//
-//            R.id.item2 -> {
-//                showToast("Another Menu Item 3 Selected")
-//            }
-//        }
-//        return super.onOptionsItemSelected(item)
-//    }
-
-    private fun showToast(msg: String) {
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
-    }
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -359,7 +289,6 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         }
     }
-
     override fun onDestroy() {
         if (tts != null) {
             tts!!.stop()

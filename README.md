@@ -25,7 +25,7 @@ About App
 </h1>
 
 <h3>
-Our app solves this problem by using text recognition technology to scan written text and read it out loud.
+Our app solves reading difficulties by using text recognition technology to scan written text and read it out loud.
 This means that users can listen to written material instead of struggling to read it themselves.
 It can be particularly helpful for those with dyslexia, visual impairments, or other reading difficulties.
  

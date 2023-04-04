@@ -11,10 +11,11 @@
 Screens
 </h2>
 <div style="display:block" >
-<img alt="fragment 1" src="https://i.ibb.co/qMGrXj9/Screenshot-20230401-000310-Talk-Time.jpg" width="250" height="500"/>
+<img alt="fragment 1" src="https://i.ibb.co/N2m2dL6/Screenshot-20230404-222908-Talk-Time.jpg" width="250" height="500"/>
 <img alt="fragment 2" src="https://i.ibb.co/CmwyKDj/Screenshot-20230401-000339-Talk-Time.jpg" width="250" height="500"/>
 <img alt="fragment 2" src="https://i.ibb.co/P6mLLSB/Screenshot-20230401-000354-Talk-Time.jpg" width="250" height="500"/>
-<img alt="fragment 2" src="https://i.ibb.co/ryLtvZB/Screenshot-20230401-000414-Talk-Time.jpg" width="250" height="500"/>
+<img alt="fragment 2" src="https://i.ibb.co/CzQwvG8/Screenshot-20230404-222940-Talk-Time.jpg" width="250" height="500"/>
+<img alt="fragment 2" src="https://i.ibb.co/bB3d8Jn/Screenshot-20230404-223305-Google.jpg" width="250" height="500"/>
 </div>
 <h2>
 <a href="https://youtu.be/9WuQhsZrbFE" target="blank">

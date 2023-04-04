@@ -5,7 +5,7 @@
 <body>
 
 <h1>
-:point_up: This is app of Solution Challenge.
+:point_up: This is app for Solution Challenge.
 </h1>
 <h2>
 Screens

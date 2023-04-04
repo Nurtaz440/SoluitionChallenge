@@ -7,9 +7,9 @@
 <p>
 :point_up: This is demo version of Solution Challenge.
 </p>
-<h3>
-On the screen Demo app
-</h3>
+<h2>
+Screens
+</h2>
 <div style="display:block" >
 <img alt="fragment 1" src="https://i.ibb.co/qMGrXj9/Screenshot-20230401-000310-Talk-Time.jpg" width="250" height="500"/>
 <img alt="fragment 2" src="https://i.ibb.co/CmwyKDj/Screenshot-20230401-000339-Talk-Time.jpg" width="250" height="500"/>
@@ -21,7 +21,7 @@ On the screen Demo app
 or watch demo video in Youtube</a>
  </h2>
 <h1>
-About App
+App
 </h1>
 
 <h3>

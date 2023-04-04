@@ -4,9 +4,9 @@
 
 <body>
 
-<p>
-:point_up: This is demo version of Solution Challenge.
-</p>
+<h1>
+:point_up: This is app of Solution Challenge.
+</h1>
 <h2>
 Screens
 </h2>
@@ -37,9 +37,8 @@ Technologies
 <li>Android</li>
 <li>Kotlin</li>
 <li>TextToSpeach</li>
-<li>Scan To Text</li>
+<li>OCR</li>
  <li>Firebase</li>
- <li>Machine learning</li>
 </ul>
 
  <h2>

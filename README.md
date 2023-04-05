@@ -1,5 +1,5 @@
 <h1 align="center">
-  ♻️ TalkTime
+  🗣️ TalkTime
 </h1>
 Our app solves reading difficulties by using text recognition technology to scan written text and read it out loud.
 This means that users can listen to written material instead of struggling to read it themselves.

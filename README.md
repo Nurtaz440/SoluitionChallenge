@@ -45,7 +45,7 @@ border-radius:10px;"> https://github.com/Nurtaz440/SoluitionChallenge.git </span
    <tr> 
      <td align="center"> 
          <a href="https://github.com/akhmad-hurshetov"> 
-            <img src="https://github.com/akhmad_hurshetov.png" height="125" width="125" alt="image" /> 
+            <img src="https://github.com/akhmad_hurshetov.jpg" height="125" width="125" alt="image" /> 
          </a> 
      </td> 
      <td align="center"> 
@@ -84,7 +84,8 @@ border-radius:10px;"> https://github.com/Nurtaz440/SoluitionChallenge.git </span
       <a href="https://www.linkedin.com/in/marjona-rakhmatillaeva">💼</a> 
      </td> 
      <td align="center"> 
-      <a href="https://gdsc.community.dev/u/m2duyj/">🔗</a> 
+      <a href="https://gdsc.community.dev/u/m2duyj/">🔗</a> -
+      <a href="https://www.linkedin.com/in/nurtaz-aykhujaev-2994681a9/">💼</a> 
      </td> 
   <td align="center"> 
       <a href="https://www.linkedin.com/in/odiljon-olimjonov-6222b3263">💼</a> 

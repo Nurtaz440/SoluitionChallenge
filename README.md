@@ -12,7 +12,7 @@ project that uses Firebase (analytics, firestore and storage) as well as latest 
 
 ## Watch our Solution video
 <a href="https://youtu.be/yyKFUB-fulM" target="blank">
-<img alt="fragment 1" src="https://i.ibb.co/JHfbCft/maxresdefault.jpg"/>
+<img alt="fragment 1" src="https://i.ibb.co/pxH7jkD/20230405-130649-0000.png"/>
  </a>
 
 

@@ -11,9 +11,10 @@ project that uses Firebase (analytics, firestore and storage) as well as latest 
 <a href="https://youtu.be/o9P6th6MSyE" target="blank"> Click here for the real-life app. </a>
 
 ## Watch our Solution video
+<a href="https://youtu.be/yyKFUB-fulM" target="blank">
+<img alt="fragment 1" src="https://i.ibb.co/JHfbCft/maxresdefault.jpg"/>
+ </a>
 
-[![Watch our Solution video](/public/banner.png)](https://youtu.be/yyKFUB-fulM)
-<html>
 
 ## Features
 
@@ -23,7 +24,6 @@ project that uses Firebase (analytics, firestore and storage) as well as latest 
 - Kotlin.
 - TTS.
 - OCR.
-- Firebase.
 
 ## Quick start
 To get started with the Android Studio, we provided a starter project that includes the basics of a Android project integrated with TTS. This gives you a quick start.
@@ -33,7 +33,11 @@ To get started with the Android Studio, we provided a starter project that inclu
    <li>If you see the Welcome to Android Studio window, use Get from VCS.</li>  
    </ul>
 <img alt="clone" src="https://i.ibb.co/TwnHDrh/import-from-vcs-856.png"/>
-2. Select Git, and use URL https://github.com/google-ar/codelab-geospatial.git to import the project.
+ 2. Select Git, and use URL <span style="padding:2px 5px;
+width:100%;
+background-color: "#A6A1A1";
+border-radius:10px;"> https://github.com/Nurtaz440/SoluitionChallenge.git </span> to import the project.
+
 <body>
 
 <h1>
@@ -60,4 +64,3 @@ App
  </h2>
 </body>
 
-</html>

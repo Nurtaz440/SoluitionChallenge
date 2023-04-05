@@ -37,5 +37,7 @@ To get started with the Android Studio, we provided a starter project that inclu
 width:100%;
 background-color: "#A6A1A1";
 border-radius:10px;"> https://github.com/Nurtaz440/SoluitionChallenge.git </span> to import the project.
+
+
 ## Team
 

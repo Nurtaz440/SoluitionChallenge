@@ -45,7 +45,7 @@ border-radius:10px;"> https://github.com/Nurtaz440/SoluitionChallenge.git </span
    <tr> 
      <td align="center"> 
          <a href="https://github.com/akhmad-hurshetov"> 
-            <img src="https://github.com/akhmad_hurshetov.jpg" height="125" width="125" alt="image" /> 
+            <img src="https://avatars.githubusercontent.com/u/69088975?v=4" height="125" width="125" alt="image" /> 
          </a> 
      </td> 
      <td align="center"> 

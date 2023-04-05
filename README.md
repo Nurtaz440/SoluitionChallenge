@@ -40,16 +40,15 @@ border-radius:10px;"> https://github.com/Nurtaz440/SoluitionChallenge.git </span
 
 
 ## Team
-
 <table> 
    <tr> 
      <td align="center"> 
          <a href="https://github.com/akhmad-hurshetov"> 
-            <img src="https://avatars.githubusercontent.com/u/69088975?v=4" height="125" width="125" alt="image" /> 
+            <img src="https://github.com/akhmad-hurshetov.png" height="125" width="125" alt="image" /> 
          </a> 
      </td> 
      <td align="center"> 
-  <img src="https://i.imgur.com/ZbbhCei.jpg" height="125" width="125" alt="image" /> 
+  <img src="https://imgur.com/brU6yq2.jpg" height="125" width="125" alt="image" /> 
   </td> 
      <td align="center"> 
          <a href="https://github.com/Nurtaz440"> 
@@ -57,7 +56,7 @@ border-radius:10px;"> https://github.com/Nurtaz440/SoluitionChallenge.git </span
          </a> 
      </td> 
      <td align="center"> 
-  <img src="https://imgur.com/fmdN2yc.jpg" height="125" width="125" alt="image" /> 
+  <img src="https://imgur.com/vQgWrpu.jpg" height="125" width="125" alt="image" /> 
      </td> 
    </tr> 
    <tr> 
